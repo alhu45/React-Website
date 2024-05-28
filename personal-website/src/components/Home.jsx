@@ -2,22 +2,33 @@ import React from 'react';
 import './Home.css';
 import vidBackground from '../assets/background.mov'
 import { useTypewriter, Cursor} from 'react-simple-typewriter'
+import Navbar from './Navbar.jsx'
 
 import linkedin from '../assets/linkedin.png'
 import github from '../assets/github.png'
 
 function Home() {
 
-    // const {text} = useTypewriter();
+    const [typeEffect] = useTypewriter({
+        words: ['printf("Hello World!");', 'System.out.println("Hello World!");', 'print("Hello World!")'],
+        loop: {},
+        typeSpeed: 80,
+        deleteSpeed: 50,
+    });
 
     return(
         <>
             <div className = "main">
                 <video className = "vid-image" src = {vidBackground} autoPlay loop muted/>
+                <Navbar />
                 <div className = "content">
-                    <p className = "font-1">Hello World</p>
+                    {/* <p className = "font-1">Hello World</p> */}
+                    <h1>
+                        <span>{typeEffect}</span>
+                        <Cursor />
+                    </h1>
                     <h1 className = "font">Alan Hu</h1>
-                    <p className = "font-2">Computer Engineer at Queen's University</p>
+                    <p className = "font-2">Computer Engineering Student at Queen's University</p>
                     <div className="buttons">
                         <div class="social-links">
                             <div id="linkedin" class="social-btn flex-center">
@@ -32,13 +43,15 @@ function Home() {
                         <a href = "https://github.com/alhu45/"><img className = "socials" src = {github}/></a> */}
                     </div>
                     <div className="buttons">
-                        <button class="cta">
-                            <span>Check me out!</span>
-                            <svg width="15px" height="10px" viewBox="0 0 13 10">
-                                <path d="M1,5 L11,5"></path>
-                                <polyline points="8 1 12 5 8 9"></polyline>
-                            </svg>
-                        </button>
+                        <a href = "#"> 
+                            <button class="cta">
+                                <span>Check me out!</span>
+                                <svg width="15px" height="10px" viewBox="0 0 13 10">
+                                    <path d="M1,5 L11,5"></path>
+                                    <polyline points="8 1 12 5 8 9"></polyline>
+                                </svg>
+                            </button>
+                        </a>
                     </div>
                 </div>
             </div>

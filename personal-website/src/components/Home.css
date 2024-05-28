@@ -18,7 +18,7 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    top: 35%;
+    top: 30%;
     text-align: left;
     flex-direction: column;
     justify-content: center;
@@ -36,7 +36,7 @@
 }
 
 .font-2 {
-    font-size: 1.75em;
+    font-size: 1.50em;
     color: #f7cd43;
 }
 
@@ -169,7 +169,6 @@ button.cta span {
     fill: #333;
 }
   
-  
 @media (max-width: 1000px) {
     .content {
         align-items: left;
@@ -179,9 +178,13 @@ button.cta span {
     .font {
         font-size: 5em;
     }
+
+    .font-2 {
+        font-size: 1.05em;
+    }
 }
 
-@media (max-width: 850px) {
+@media (max-width: 750px) {
     .content {
         align-items: left;
     }
@@ -189,14 +192,8 @@ button.cta span {
     .font {
         font-size: 4em;
     }
-}
 
-@media (max-width: 600px) {
-    .content {
-        align-items: left;
-    }
-
-    .font {
-        font-size: 3.5em;
+    .font-2 {
+        font-size: 0.85em;
     }
 }
