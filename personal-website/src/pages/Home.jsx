@@ -2,7 +2,7 @@ import React from 'react';
 import './Home.css';
 import vidBackground from '../assets/background.mov'
 import { useTypewriter, Cursor} from 'react-simple-typewriter'
-import Navbar from './Navbar.jsx'
+import Navbar from '../components/Navbar.jsx'
 
 import linkedin from '../assets/linkedin.png'
 import github from '../assets/github.png'
@@ -23,7 +23,7 @@ function Home() {
                 <Navbar />
                 <div className = "content">
                     {/* <p className = "font-1">Hello World</p> */}
-                    <h1>
+                    <h1 className = "font-3">
                         <span>{typeEffect}</span>
                         <Cursor />
                     </h1>
@@ -43,7 +43,7 @@ function Home() {
                         <a href = "https://github.com/alhu45/"><img className = "socials" src = {github}/></a> */}
                     </div>
                     <div className="buttons">
-                        <a href = "#"> 
+                        <a href = "about"> 
                             <button class="cta">
                                 <span>Check me out!</span>
                                 <svg width="15px" height="10px" viewBox="0 0 13 10">

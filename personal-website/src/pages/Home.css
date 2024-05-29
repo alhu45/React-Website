@@ -13,6 +13,11 @@
     top: 0;
     left: 0;
 }
+header {
+    position: relative;
+    width: 100%;
+    z-index: 10;
+}
 
 .content {
     position: absolute;
@@ -38,6 +43,10 @@
 .font-2 {
     font-size: 1.50em;
     color: #f7cd43;
+}
+
+.font-3 {
+    font-size: 1.80em;
 }
 
 span {
@@ -182,6 +191,10 @@ button.cta span {
     .font-2 {
         font-size: 1.05em;
     }
+
+    .font-3 {
+        font-size: 1.35em;
+    }
 }
 
 @media (max-width: 750px) {
@@ -194,6 +207,6 @@ button.cta span {
     }
 
     .font-2 {
-        font-size: 0.85em;
+        font-size: 0.80em;
     }
 }
