@@ -8,8 +8,33 @@ import JS from '../assets/JS.png';
 import Python from '../assets/Python.png';
 import ReactLogo from '../assets/React.png';
 import MySQL from '../assets/SQL.png'
+import { useEffect } from 'react';
 
 function Card(){
+
+    useEffect(() => {
+        const cards = document.querySelectorAll('.card');
+
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        cards.forEach(card => {
+            observer.observe(card);
+        });
+    }, []);
+
 		return(
             <>
                 <center>

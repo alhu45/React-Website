@@ -52,7 +52,7 @@ function Projects() {
               <img className = "card-image" src = {walkJump} alt = "video" autoPlay loop muted />
             </div>
             <div className="buttons">
-                <a href = "https://github.com/alhu45/InstaRecipe?tab=readme-ov-file"> 
+                <a href = "https://github.com/alhu45/logistical-regression-walkjump-app"> 
                     <button class="cta">
                         <span>Check it out!</span>
                         <svg width="15px" height="10px" viewBox="0 0 13 10">
@@ -74,7 +74,7 @@ function Projects() {
               <img className = "card-image" src = { pacman } alt = "video" autoPlay loop muted />
             </div>
             <div className="buttons">
-                <a href = ""> 
+                <a href = "https://github.com/alhu45/pacman-game"> 
                     <button class="cta">
                         <span>Check it out!</span>
                         <svg width="15px" height="10px" viewBox="0 0 13 10">
@@ -96,7 +96,7 @@ function Projects() {
               <img className = "card-image" src = { app } alt = "video" autoPlay loop muted />
             </div>
             <div className="buttons">
-                <a href = ""> 
+                <a href = "https://github.com/alhu45/posture-app"> 
                     <button class="cta">
                         <span>Check it out!</span>
                         <svg width="15px" height="10px" viewBox="0 0 13 10">
@@ -117,7 +117,7 @@ function Projects() {
               <img className = "card-image" src = { excel } alt = "video" autoPlay loop muted />
             </div>
             <div className="buttons">
-                <a href = ""> 
+                <a href = "https://github.com/alhu45/excel-spreadsheet"> 
                     <button class="cta">
                         <span>Check it out!</span>
                         <svg width="15px" height="10px" viewBox="0 0 13 10">

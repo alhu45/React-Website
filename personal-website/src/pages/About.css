@@ -13,6 +13,7 @@
     height: 400px;
 	display: inline-block;
     line-height: 1.5;
+    animation: fadeInFromLeft 1.25s ease-out both;
 }
 
 .card-me {
@@ -33,6 +34,7 @@
     height: 350px;
 	border-radius: 50%;
 	margin-bottom: 10px;
+    animation: fadeInFromLeft 1.25s ease-out both;
 }
 
 .bruh-2 {
@@ -45,6 +47,7 @@
     margin-left: 5%;
     font-size: 3em;
     padding: 2%;
+    animation: fadeInFromLeft 1.25s ease-out both;
 }
 
 @media (max-width: 1000px) {
