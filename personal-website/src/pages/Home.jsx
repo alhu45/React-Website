@@ -3,9 +3,8 @@ import './Home.css';
 import vidBackground from '../assets/background.mov'
 import { useTypewriter, Cursor} from 'react-simple-typewriter'
 import Navbar from '../components/Navbar.jsx'
+import { Link } from "react-router-dom";
 
-import linkedin from '../assets/linkedin.png'
-import github from '../assets/github.png'
 
 function Home() {
 
@@ -43,7 +42,7 @@ function Home() {
                         <a href = "https://github.com/alhu45/"><img className = "socials" src = {github}/></a> */}
                     </div>
                     <div className="buttons">
-                        <a href = "about"> 
+                        <Link to = "/about"> 
                             <button class="cta">
                                 <span>Check me out!</span>
                                 <svg width="15px" height="10px" viewBox="0 0 13 10">
@@ -51,7 +50,7 @@ function Home() {
                                     <polyline points="8 1 12 5 8 9"></polyline>
                                 </svg>
                             </button>
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </div>

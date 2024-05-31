@@ -2,7 +2,6 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import About from './pages/About.jsx'
-import Experience from './pages/Experience.jsx'
 import Projects from './pages/Projects.jsx'
 
 
@@ -20,10 +19,6 @@ const home = createBrowserRouter([
   {
     path: "about",
     element: <About />,
-  },
-  {
-    path: "experience",
-    element: <Experience />,
   },
   {
     path: "projects",
